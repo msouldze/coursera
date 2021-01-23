@@ -5,7 +5,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/** HEADER **/
 #header-nav {
   background-color: #b19cd9;
   border-radius: 0;
@@ -32,9 +31,6 @@ body {
 	color: #b19cd9;
 	size: solid;
 }
-h3 {
-	text-align: center;
-}
 .container {
 	background-color: #cdb7f6;
 }
@@ -43,11 +39,7 @@ button {
 }
 button.navbar-toggler {
 	border: 1px solid #fff;
-}
-#nav-list {
-	text-align: center;
-	
-}
+}	
 #nav-list a {
 	text-decoration: none;
 	color: #fff;
