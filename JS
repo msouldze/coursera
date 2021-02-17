@@ -1,0 +1,16 @@
+function updateRecords(object, id, prop, value) {
+
+  if (prop !== "tracks" && object[id][prop] !== '') {
+       return object[id][prop] = value;
+  } else if (prop === "tracks" && object[id].hasOwnProperty("tracks") === false) {
+      return object[id][prop] = [value];
+  } else if (prop === "tracks" && object[id][prop] !== '') {
+      return object[id][prop].push(value);
+  } else if (value === '') {
+      return delete object[id][prop];
+  }
+
+  return object;
+};
+
+console.log(updateRecords(collection, 1245, "tracks", "Addicted to Love"));
